@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Banner</string>
+    <string name="view_the_basic_version">View the basic version</string>
+    <string name="view_the_overlay">View the overlay</string>
+</resources>

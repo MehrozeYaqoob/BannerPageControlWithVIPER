@@ -24,6 +24,7 @@ import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+
 import com.example.haidermirza.banner.R;
 import com.example.haidermirza.banner.viper.entity.Banner;
 
@@ -392,7 +393,7 @@ public abstract class RecyclerViewBannerBase<L extends RecyclerView.LayoutManage
         if (newTabList.size() != oldTabList.size())
             return true;
         for (int i = 0; i < newTabList.size(); i++) {
-            if (TextUtils.isEmpty(newTabList.get(i).url))
+            if (TextUtils.isEmpty(newTabList.get(i).getUrl()))
                 return true;
             if (!newTabList.get(i).equals(oldTabList.get(i))) {
                 return true;

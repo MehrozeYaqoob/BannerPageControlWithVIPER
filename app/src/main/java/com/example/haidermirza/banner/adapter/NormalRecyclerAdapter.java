@@ -36,7 +36,7 @@ public class NormalRecyclerAdapter extends RecyclerView.Adapter<NormalRecyclerAd
     public void onBindViewHolder(NormalHolder holder, final int position) {
         if (urlList == null || urlList.isEmpty())
             return;
-        String url = urlList.get(position % urlList.size()).url;
+        String url = urlList.get(position % urlList.size()).getUrl();
         ImageView img = (ImageView) holder.itemView;
         Glide.with(context).load(url).into(img);
         img.setOnClickListener(new View.OnClickListener() {

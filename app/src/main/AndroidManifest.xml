@@ -10,15 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".viper.view.MainActivity">
+        <activity android:name=".viper.view.MainActivityImp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".viper.view.NormalActivity"/>
-        <activity android:name=".viper.view.OverFlyingActivity"/>
+        <activity android:name=".viper.view.NormalActivityImp"/>
+        <activity android:name=".viper.view.OverFlyingActivityImp"/>
     </application>
 
 </manifest>

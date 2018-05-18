@@ -39,7 +39,7 @@ public class WebBannerAdapter extends RecyclerView.Adapter<WebBannerAdapter.MzVi
         if (urlList == null || urlList.isEmpty())
             return;
         final int P = position % urlList.size();
-        String url =urlList.get(P).url;
+        String url = urlList.get(P).getUrl();
         ImageView img = (ImageView) holder.imageView;
         Glide.with(context).load(url).into(img);
         img.setOnClickListener(new View.OnClickListener() {
